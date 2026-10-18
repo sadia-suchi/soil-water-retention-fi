@@ -1,0 +1,24 @@
+One-way ANOVA: plant-available water (mm per m) by texture
+
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+texture      3  14433    4811   53.16 1.26e-05 ***
+Residuals    8    724      90                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Tukey HSD
+
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = paw_mm_per_m ~ texture, data = summary_tbl)
+
+$texture
+                                diff        lwr       upr     p adj
+loam-clay                   28.55890   3.685445  53.43236 0.0258268
+sandy_loam-clay            -10.90310 -35.776560  13.97036 0.5308815
+silty_clay_loam-clay        78.73573  53.862269 103.60919 0.0000358
+sandy_loam-loam            -39.46200 -64.335464 -14.58855 0.0041936
+silty_clay_loam-loam        50.17682  25.303365  75.05028 0.0008890
+silty_clay_loam-sandy_loam  89.63883  64.765370 114.51229 0.0000135
+
